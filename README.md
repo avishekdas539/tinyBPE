@@ -4,20 +4,20 @@ For LLM to understand texts it needs a translator between text and number, that 
 
 The algorithm is inspired from the folloing references.
 
-* OpenAI-GPT2 Paper: [GPT-2 Paper Link](!https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf)
+* OpenAI-GPT2 Paper: [GPT-2 Paper Link](https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf)
 
-* Wikipedia: [Byte Pair Encoding](!https://en.wikipedia.org/wiki/Byte_pair_encoding)
+* Wikipedia: [Byte Pair Encoding](https://en.wikipedia.org/wiki/Byte_pair_encoding)
 
-* Video Suggestions by Andrej Karpathy: [Let's build the GPT Tokenizer](!https://youtu.be/zduSFxRajkE?si=cNKo7AsE4iSppijW)
+* Video Suggestions by Andrej Karpathy: [Let's build the GPT Tokenizer](https://youtu.be/zduSFxRajkE?si=cNKo7AsE4iSppijW)
 
 
 ## File and Code Descriptions
 
-* [tinyBPE/base.py](!https://github.com/avishekdas539/tinyBPE/blob/main/tinyBPE/base.py) conatins the helper functions like ```get_pair_counts```, ```merge_pairs```, ```replace_control_chars```, ```render_tokens``` and the base class ```BaseBPETokenizer``` for all tokenizers with ```to_local``` and ```from_loal``` functions.
+* [tinyBPE/base.py](tinyBPE/base.py) conatins the helper functions like ```get_pair_counts```, ```merge_pairs```, ```replace_control_chars```, ```render_tokens``` and the base class ```BaseBPETokenizer``` for all tokenizers with ```to_local``` and ```from_loal``` functions.
 
-* [tinyBPE/bytelevel.py](!https://github.com/avishekdas539/tinyBPE/blob/main/tinyBPE/bytelevel.py) file contains a very basic level of tokenizer ```ByteLevelBPETokenizer``` where the base splitting is byte level. Then the merges are performed.
+* [tinyBPE/bytelevel.py](!tinyBPE/bytelevel.py) file contains a very basic level of tokenizer ```ByteLevelBPETokenizer``` where the base splitting is byte level. Then the merges are performed.
 
-* [tinyBPE/regexBPE.py](!https://github.com/avishekdas539/tinyBPE/blob/main/tinyBPE/regexBPE.py) this implements ```RegexBPETokenizer``` class which incorporates ```Regular Expressions``` for initial splittingg to optimize token splitting.
+* [tinyBPE/regexBPE.py](!tinyBPE/regexBPE.py) this implements ```RegexBPETokenizer``` class which incorporates ```Regular Expressions``` for initial splittingg to optimize token splitting.
 
 
 ## Documentation
